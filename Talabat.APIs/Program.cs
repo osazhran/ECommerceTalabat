@@ -63,7 +63,7 @@ namespace Talabat.APIs
                 await StoreContextSeed.SeedAsync(_DbContext); // Data Seeding
                 await _IdentityDbContext.Database.MigrateAsync(); // Update-Database
 
-                var _userManager = services.GetRequiredService < UserManager<AppUser>>();
+                var _userManager = services.GetRequiredService<UserManager<AppUser>>();
                 await AppIdentityDbContextSeed.SeedUsersAsync(_userManager);
             }
             catch (Exception ex)
@@ -93,7 +93,7 @@ namespace Talabat.APIs
             app.UseCors("MyPolicy");
 
             app.MapControllers();
-            
+
             app.UseAuthentication();
 
             app.UseAuthorization();
