@@ -13,10 +13,10 @@ using Talabat.Core.Specifications.Order_Specs;
 namespace Talabat.Service
 {
     public class OrderService : IOrderService
-    {
-        private readonly IBasketRepository _basketRepo;
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IPaymentService _paymentService;
+    {     
+        private   readonly IBasketRepository _basketRepo;
+        private   readonly IUnitOfWork _unitOfWork;
+        private   readonly IPaymentService _paymentService;
 
         ///private readonly IGenericRepository<Product> _productRepo;
         ///private readonly IGenericRepository<DeliveryMethod> _deliveryMethodRepo;
