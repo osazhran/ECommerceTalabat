@@ -20,7 +20,6 @@ namespace Talabat.Service
         private readonly IUnitOfWork _unitOfWork;
         private readonly IBasketRepository _basketRepo;
         private readonly IConfiguration _configuration;
-
         public PaymentService(
             IUnitOfWork unitOfWork,
             IBasketRepository basketRepo,
